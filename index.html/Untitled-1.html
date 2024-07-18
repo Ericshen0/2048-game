@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2048 遊戲</title>
+    <style>
+        #game-board {
+            width: 400px;
+            height: 400px;
+            background-color: #bbada0;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 15px;
+            padding: 15px;
+            border-radius: 5px;
+        }
+        .tile {
+            background-color: #cdc1b4;
+            border-radius: 3px;
+            font-size: 35px;
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>2048</h1>
+    <div id="game-board"></div>
+    <script src="game.js"></script>
+</body>
+</html>
